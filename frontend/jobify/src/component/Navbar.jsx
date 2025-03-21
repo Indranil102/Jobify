@@ -9,10 +9,10 @@ const Navbar = () => {
         {/* Corrected Logo Image */}
         <img src={logo} alt="Jobify Logo" className="w-[40px] h-[40px] rounded-full" />
 
-        <div className='ml-6 font-semibold transition duration-300 hover:text-gray-400'><h2 className="relative pb-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-blue-400 after:transition-all after:duration-300 group-hover:after:w-full">Home</h2></div>
-        <div className='ml-6 font-semibold'><h2>Job Trend</h2></div>
-        <div className='ml-6 font-semibold'><h2>Skill Roadmap</h2></div>
-        <div className='ml-6 font-semibold'><h2>My Progress</h2></div>
+        <div className='ml-6 font-semibold transition duration-300 hover:text-[#79ded1]'><h2 className="relative pb-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-blue-400 after:transition-all after:duration-300 group-hover:after:w-full">Home</h2></div>
+        <div className='ml-6 font-semibold transition duration-300 hover:text-[#79ded1]'><h2>Job Trend</h2></div>
+        <div className='ml-6 font-semibold transition duration-300 hover:text-[#79ded1]'><h2>Skill Roadmap</h2></div>
+        <div className='ml-6 font-semibold transition duration-300 hover:text-[#79ded1]'><h2>My Progress</h2></div>
       </div>
 
       <div className='flex gap-[30px] mr-[50px]'>
