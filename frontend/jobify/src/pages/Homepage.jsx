@@ -117,13 +117,13 @@ const Homepage = ({setIsAuthenticated,Register,setRegister,setUser}) => {
         </div>
         <div className="w-1/2 pl-8 border-l border-gray-200 ml-8 text-[#e9ffef]"> {/* Added ml-8 for space */}
             <h2 className="text-xl font-bold mb-6">Discover Your Career Path</h2>
-            <p className="text-gray-600 mb-8 text-[#79ded1]">
+            <p className=" mb-8 text-[#79ded1]">
               Job Scout AI helps you find the perfect job and guides you through the skills you need to succeed.
             </p>
 
             <div className="mb-8">
               <h3 className="text-lg font-semibold mb-2  text-[#e9ffef]">Track Job Trends</h3>
-              <p className="text-gray-600 text-[#79ded1]">Stay updated with real-time job market demands and opportunities.</p>
+              <p className=" text-[#79ded1]">Stay updated with real-time job market demands and opportunities.</p>
             </div>
 
             <div>

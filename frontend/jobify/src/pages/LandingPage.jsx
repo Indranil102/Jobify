@@ -22,7 +22,7 @@ const LandingPage = () => {
       </section>
 
       {/* Job Categories */}
-      <div className="flex flex-wrap justify-center gap-4 p-6 bg-gray-50">
+      <div className="flex flex-wrap justify-center gap-4 p-4 bg-gray-50">
         <button className="px-4 py-2 bg-white shadow-md rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500">
           Remote
         </button>
@@ -41,23 +41,53 @@ const LandingPage = () => {
       </div>
 
       {/* Top Companies Section */}
-      <section className="p-6 bg-white">
-        <h2 className="text-2xl font-bold text-center">Top companies hiring now</h2>
-        <div className="flex justify-center gap-6 mt-6">
-          <div className="p-4 bg-gray-100 rounded-md shadow hover:bg-gray-200 cursor-pointer">
-            MNCs
-          </div>
-          <div className="p-4 bg-gray-100 rounded-md shadow hover:bg-gray-200 cursor-pointer">
-            Fortune 500
-          </div>
-          <div className="p-4 bg-gray-100 rounded-md shadow hover:bg-gray-200 cursor-pointer">
-            Unicorns
-          </div>
-          <div className="p-4 bg-gray-100 rounded-md shadow hover:bg-gray-200 cursor-pointer">
-            Startups
-          </div>
+     
+ {/* Job Listings */}
+      <div className="max-w-4xl mx-auto mt-4">
+          <h1 className="text-4xl font-bold mb-6  text-center">Job Listings</h1>
+          <div className='flex justify-evenly'>
+
+        <div className="bg-white p-6 rounded-lg shadow-md mb-6 w-[400px]">
+        
+            <h2 className="text-xl font-bold mb-2 ">Frontend Developer</h2>
+            <p className="text-gray-600 mb-2 font-semibold ">Average Salary: $95,000</p>
+            <p className="text-gray-600 mb-4 font-medium ">Location: 'Houston'</p>
+            
+
+            <div className="mb-4">
+               <h3 className=" mb-2 text-lg font-semibold ">Required Skills:</h3>
+                <ul className="list-disc list-inside text-gray-700 flex gap-5">
+                    <li>React</li>
+                    <li>TypeScript</li>
+                    <li>HTML/CSS</li>
+                </ul>
+             </div>
+                <button className="bg-blue-500 text-white px-4 py-2 mt-2 rounded hover:bg-blue-600 ml-[115px]">Apply Now</button>
         </div>
-      </section>
+
+        
+        <div className="bg-white p-6 rounded-lg shadow-md mb-6 w-[400px]">
+        
+            <h2 className="text-xl font-bold mb-2 ">Frontend Developer</h2>
+            <p className="text-gray-600 mb-2 font-semibold ">Average Salary: $95,000</p>
+            <p className="text-gray-600 mb-4 font-medium ">Location: 'Houston'</p>
+            
+
+            <div className="mb-4">
+               <h3 className=" mb-2 text-lg font-semibold ">Required Skills:</h3>
+                <ul className="list-disc list-inside text-gray-700 flex gap-5">
+                    <li>React</li>
+                    <li>TypeScript</li>
+                    <li>HTML/CSS</li>
+                </ul>
+             </div>
+                <button className="bg-blue-500 text-white px-4 py-2 mt-2 rounded hover:bg-blue-600 ml-[115px]">Apply Now</button>
+        </div>
+
+    
+    
+    </div>
+</div>
     </div>
   );
 };
