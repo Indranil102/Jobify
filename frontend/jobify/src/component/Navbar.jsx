@@ -15,14 +15,14 @@ const Navbar = () => {
         <div className='ml-6 font-semibold'><h2>My Progress</h2></div>
       </div>
 
-      <div className='flex gap-[30px] mr-[50px]'>
+      {/* <div className='flex gap-[30px] mr-[50px]'>
         <button className="w-[80px] h-[40px] bg-gray-100 rounded-lg hover:bg-gray-400 cursor-pointer text-blue-500 font-semibold">
           Sign In
         </button>
         <button className="w-[80px] h-[40px] bg-gray-100 rounded-lg hover:bg-gray-400 cursor-pointer text-blue-500 font-semibold">
           Login
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };
