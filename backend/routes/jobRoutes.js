@@ -1,6 +1,6 @@
 import express from 'express';
 import Job from '../models/Job.js';
-
+import roadMap from '../models/roadMap.js';
 const router = express.Router();
 
 router.get('/jobs/search', async (req, res) => {
@@ -46,7 +46,30 @@ router.get('/jobs/search', async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 });
+router.get('/way/search', async (req, res) => {
+  try {
+    const { q } = req.query;
+    var searchQuery = {};
 
+    // ✅ Global Search Across Multiple Fields
+    if (q) {
+      searchQuery = 
+        // { CareerPath : { $regex: q, $options: 'i' } }
+        { CareerPath : q }
+      ;
+    }
+
+  
+
+    // 👉 Perform search in MongoDB
+    const Map = await roadMap.find(searchQuery);
+    console.log(Map);
+    res.status(200).json(Map[0]);
+  } catch (error) {
+    console.error('Search Error:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
 // ✅ Add a test route to add jobs (optional)
 router.post('/jobs', async (req, res) => {
   try {
