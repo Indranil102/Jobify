@@ -1,6 +1,6 @@
 import React from 'react';
-
-const Homepage = () => {
+import PropTypes from 'prop-types';
+const Homepage = ({setIsAuthenticated,Register,setRegister,setUser}) => {
   return (
     <div>
 <div className="min-h-screen bg-[#092424] flex items-center justify-center  ">
@@ -12,11 +12,10 @@ const Homepage = () => {
             <p className="text-center text-[#e2ffe3] mb-8">Sign in or create an account to get started</p>
 
             <div className="flex justify-between mb-6">
-              <button className="text-[#e9ffef] font-semibold hover:text-[#79ded1]">Login</button>
-              <button className="text-[#e9ffef] font-semibold hover:text-[#79ded1]">Register</button>
+              <button className="text-[#e9ffef] font-semibold hover:text-[#79ded1]" onClick={()=>setRegister(true)}>Login</button>
+              <button className="text-[#e9ffef] font-semibold hover:text-[#79ded1]" onClick={()=>setRegister(false)}>Register</button>
             </div>
-
-            <form>
+            {Register && <form>
               <div className="mb-4">
                 <label className="block text-[] text-sm font-bold mb-2 text-[#e9ffef]" htmlFor="username">
                   Username
@@ -44,7 +43,7 @@ const Homepage = () => {
                   className="  text-[#e9ffef] font-semibold hover:text-[#79ded1] text-lg 
                   
                   py-2 px-4 rounded-3xl focus:outline-none focus:shadow-outline border border-[#e9ffef] hover:border-[#79ded1]"
-                  type="button"
+                  type="button" onClick={()=>setIsAuthenticated(true)}
                 >
                   Login
                 </button>
@@ -55,13 +54,58 @@ const Homepage = () => {
                   Forgot Password?
                 </a>
               </div>
-            </form>
+            </form>}
+            {!Register && <form>
+              <div className="mb-4">
+                <label className="block text-[] text-sm font-bold mb-2 text-[#e9ffef]" htmlFor="username">
+                  Username
+                </label>
+                <input
+                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="username"
+                  type="text"
+                  placeholder="Username"
+                />
+              </div>
+              <div className="mb-4">
+                <label className="block text-[] text-sm font-bold mb-2 text-[#e9ffef]" htmlFor="email">
+                  Email
+                </label>
+                <input
+                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="email"
+                  type="text"
+                  placeholder="Email"
+                />
+              </div>
+              <div className="mb-6">
+                <label className="block text-[#e9ffef] text-sm font-bold mb-2" htmlFor="password">
+                  Password
+                </label>
+                <input
+                  className="shadow appearance-none border rounded w-full py-2 px-3 text-text-[#e9ffef] leading-tight focus:outline-none focus:shadow-outline"
+                  id="password"
+                  type="password"
+                  placeholder="Password"
+                />
+              </div>
+              <div className="flex items-center ml-[240px]">
+                <button
+                  className="  text-[#e9ffef] font-semibold hover:text-[#79ded1] text-lg 
+                  
+                  py-2 px-4 rounded-3xl focus:outline-none focus:shadow-outline border border-[#e9ffef] hover:border-[#79ded1]"
+                  type="button" onClick={()=>setIsAuthenticated(true) && setUser(user +[{username:document.getElementById('username').value,email:document.getElementById('email').value}])}
+                >
+                  Register
+                </button>
+              </div>
+            </form>}
 
             <div className="mt-6 text-center flex gap-2 ">
               <p className="text-[#e9ffef]">Don't have an account?</p>
               <button
                 className=" text-[#79ded1] font-bold  rounded focus:outline-none focus:shadow-outline text-[14px]" 
-                type="button"
+                type="button" onClick={()=>setRegister(false)}
               >
                 Create Account
               </button>

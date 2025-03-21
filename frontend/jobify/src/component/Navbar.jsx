@@ -1,7 +1,7 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
 import logo from '../assets/Screenshot 2025-03-21 005904.png';
-const Navbar = () => {
+const Navbar = ({isAuthenticated,setIsAuthenticated,Register,setRegister,setUser,user}) => {
   return (
     
     <div className='flex justify-between items-center p-5 bg-[#0A1A1A] text-[#f8fdff] border-b-[1px] border-white'>
@@ -15,14 +15,19 @@ const Navbar = () => {
         <div className='ml-6 font-semibold transition duration-300 hover:text-[#79ded1]'><h2>My Progress</h2></div>
       </div>
 
-      <div className='flex gap-[30px] mr-[50px]'>
-        <button className="w-[80px] h-[40px] bg-gray-100 rounded-lg hover:bg-gray-400 cursor-pointer text-blue-500 font-semibold">
+      {!isAuthenticated && <div className='flex gap-[30px] mr-[50px]'>
+        {Register && <button className="w-[80px] h-[40px] bg-gray-100 rounded-lg hover:bg-gray-400 cursor-pointer text-blue-500 font-semibold" onClick={()=>setRegister(false)}>
           Sign Up
-        </button>
-        {/* <button className="w-[80px] h-[40px] bg-gray-100 rounded-lg hover:bg-gray-400 cursor-pointer text-blue-500 font-semibold">
+        </button>}
+        {!Register && <button className="w-[80px] h-[40px] bg-gray-100 rounded-lg hover:bg-gray-400 cursor-pointer text-blue-500 font-semibold" onClick={()=>setRegister(true)}>
           Login
-        </button> */}
-      </div>
+        </button>}
+      </div>}
+      {isAuthenticated && <div className='flex gap-[30px] mr-[50px]'>
+        <button className="w-[80px] h-[40px] bg-gray-100 rounded-lg hover:bg-gray-400 cursor-pointer text-blue-500 font-semibold" onClick={()=>setIsAuthenticated(false)}>
+          Logout
+        </button>
+      </div>}
     </div>
   );
 };
