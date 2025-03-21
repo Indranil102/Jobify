@@ -3,10 +3,11 @@ import React from 'react';
 const Homepage = () => {
   return (
     <div>
-      <div className="min-h-screen bg-gray-100 flex items-center justify-center p-6">
-        <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-4xl flex">
+<div className="min-h-screen bg-[#274b4b] flex items-center justify-center p-6 ">
+
+        <div className="bg-[#0A1A1A] p-8 rounded-lg shadow-lg w-full max-w-3xl flex  ">
           {/* Left Side: Login Form */}
-          <div className="w-1/2 pr-8">
+          <div className="w-full pr-8">
             <h1 className="text-2xl font-bold text-center mb-6">Welcome to Job Scout AI</h1>
             <p className="text-center text-gray-600 mb-8">Sign in or create an account to get started</p>
 
