@@ -3,22 +3,22 @@ import React from 'react';
 const Homepage = () => {
   return (
     <div>
-<div className="min-h-screen bg-[#274b4b] flex items-center justify-center  ">
+<div className="min-h-screen bg-[#092424] flex items-center justify-center  ">
 
         <div className="h-[100vh] bg-[#0A1A1A] flex items-center justify-center p-2  w-[900px] ">
           {/* Left Side: Login Form */}
-          <div className="w-full pr-9 pl-9">
-            <h1 className="text-2xl font-bold text-center mb-6 text-gray-300" >Welcome to Jobify</h1>
-            <p className="text-center text-gray-400 mb-8">Sign in or create an account to get started</p>
+          <div className="w-[700px] pr-9 pl-9">
+            <h1 className="text-3xl font-bold text-center mb-6 text-[#e9ffef]" >Welcome to Jobify</h1>
+            <p className="text-center text-[#e2ffe3] mb-8">Sign in or create an account to get started</p>
 
             <div className="flex justify-between mb-6">
-              <button className="text-blue-500 font-semibold hover:text-blue-700">Login</button>
-              <button className="text-blue-500 font-semibold hover:text-blue-700">Register</button>
+              <button className="text-[#e9ffef] font-semibold hover:text-[#79ded1]">Login</button>
+              <button className="text-[#e9ffef] font-semibold hover:text-[#79ded1]">Register</button>
             </div>
 
             <form>
               <div className="mb-4">
-                <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="username">
+                <label className="block text-[] text-sm font-bold mb-2 text-[#e9ffef]" htmlFor="username">
                   Username
                 </label>
                 <input
@@ -29,25 +29,27 @@ const Homepage = () => {
                 />
               </div>
               <div className="mb-6">
-                <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
+                <label className="block text-[#e9ffef] text-sm font-bold mb-2" htmlFor="password">
                   Password
                 </label>
                 <input
-                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  className="shadow appearance-none border rounded w-full py-2 px-3 text-text-[#e9ffef] leading-tight focus:outline-none focus:shadow-outline"
                   id="password"
                   type="password"
                   placeholder="Password"
                 />
               </div>
-              <div className="flex items-center justify-between">
+              <div className="flex items-center ml-[240px]">
                 <button
-                  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                  className="  text-[#e9ffef] font-semibold hover:text-[#79ded1] text-lg 
+                  
+                  py-2 px-4 rounded-3xl focus:outline-none focus:shadow-outline border border-[#e9ffef] hover:border-[#79ded1]"
                   type="button"
                 >
                   Login
                 </button>
                 <a
-                  className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
+                  className="inline-block align-baseline font-bold text-[12px] text-[#e9ffef]  ml-[200px]"
                   href="#"
                 >
                   Forgot Password?
@@ -55,10 +57,10 @@ const Homepage = () => {
               </div>
             </form>
 
-            <div className="mt-8 text-center">
-              <p className="text-gray-600">Don't have an account?</p>
+            <div className="mt-6 text-center flex gap-2 ">
+              <p className="text-[#e9ffef]">Don't have an account?</p>
               <button
-                className="mt-2 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                className=" text-[#79ded1] font-bold  rounded focus:outline-none focus:shadow-outline text-[14px]" 
                 type="button"
               >
                 Create Account
