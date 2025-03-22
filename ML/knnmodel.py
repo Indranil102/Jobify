@@ -114,10 +114,7 @@ for i, target in enumerate(['Growth Category', 'Salary Category', 'Openings Cate
     recall = recall_score(y_test.iloc[:, i], y_pred[:, i], average='weighted') +0.35
     accuracy = accuracy_score(y_test.iloc[:, i], y_pred[:, i]) +0.35
     
-    print(f"  Precision: {precision:.2f}")
-    print(f"  Recall: {recall:.2f}")
-    print(f"  Accuracy: {accuracy:.2f}")
-    print()
+   
 
 # Save the trained model (optional)
 import joblib
