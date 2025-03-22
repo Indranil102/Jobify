@@ -5,7 +5,7 @@ import Homepage from './pages/Homepage'
 import LandingPage from './pages/LandingPage'
 import JobTrends from './pages/JobTrends'
 import Roadmap from './pages/Roadmap'
-import Growth from './pages/CareerGrowth'
+import Growth from './pages/CarrerGrowth'
 import { useState } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 function App() {

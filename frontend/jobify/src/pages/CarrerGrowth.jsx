@@ -47,7 +47,7 @@ const CareerGrowth = () => {
 
       <section className="bg-gray-100 py-20">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-8">How Job Scout AI’s Reverse Career Mapping Works</h2>
+          <h2 className="text-3xl font-bold text-center mb-8">How Jobify AI’s Reverse Career Mapping Works</h2>
           <div className="grid md:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="bg-white p-6 rounded-lg shadow-lg">
