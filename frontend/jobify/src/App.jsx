@@ -5,6 +5,7 @@ import Homepage from './pages/Homepage'
 import LandingPage from './pages/LandingPage'
 import JobTrends from './pages/JobTrends'
 import Roadmap from './pages/Roadmap'
+import Growth from './pages/CareerGrowth'
 import { useState } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/landing" element={<LandingPage />} />
           <Route path="/jobtrends" element={<JobTrends />} />
           <Route path="/roadmap" element={<Roadmap />} />
+          <Route path="/growth" element={<Growth />} />
         </Routes>
       </Router>
     </>

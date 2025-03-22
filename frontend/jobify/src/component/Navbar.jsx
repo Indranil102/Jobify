@@ -14,6 +14,7 @@ const Navbar = ({isAuthenticated,setIsAuthenticated,Register,setRegister,setUser
         <Link to='/jobtrends'><div className='ml-6 font-semibold transition duration-300 hover:text-[#79ded1]'><h2>Job Trend</h2></div></Link>
         <Link to='/roadmap'><div className='ml-6 font-semibold transition duration-300 hover:text-[#79ded1]'><h2>Skill Roadmap</h2></div></Link>
         <Link to='/landing'><div className='ml-6 font-semibold transition duration-300 hover:text-[#79ded1]'><h2>My Progress</h2></div></Link>
+        <Link to='/growth'><div className='ml-6 font-semibold transition duration-300 hover:text-[#79ded1]'><h2>Career Growth</h2></div></Link>
       </div>
 
       {!isAuthenticated && <div className='flex gap-[30px] mr-[50px]'>
