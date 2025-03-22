@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Navigate ,Link} from 'react-router-dom';
 const Homepage = ({setIsAuthenticated,Register,setRegister,setUser}) => {
   return (
     <div>
 <div className="min-h-screen bg-[#092424] flex items-center justify-center  ">
-
         <div className="h-[100vh] bg-[#0A1A1A] flex items-center justify-center p-2  w-[900px] ">
           {/* Left Side: Login Form */}
           <div className="w-[700px] pr-9 pl-9">
@@ -39,14 +39,14 @@ const Homepage = ({setIsAuthenticated,Register,setRegister,setUser}) => {
                 />
               </div>
               <div className="flex items-center ml-[240px]">
-                <button
+                <Link to={'/landing'}><button
                   className="  text-[#e9ffef] font-semibold hover:text-[#79ded1] text-lg 
                   
                   py-2 px-4 rounded-3xl focus:outline-none focus:shadow-outline border border-[#e9ffef] hover:border-[#79ded1]"
                   type="button" onClick={()=>setIsAuthenticated(true)}
                 >
                   Login
-                </button>
+                </button></Link>
                 <a
                   className="inline-block align-baseline font-bold text-[12px] text-[#e9ffef]  ml-[200px]"
                   href="#"
@@ -90,14 +90,14 @@ const Homepage = ({setIsAuthenticated,Register,setRegister,setUser}) => {
                 />
               </div>
               <div className="flex items-center ml-[240px]">
-                <button
+              <Link to={'/landing'}><button
                   className="  text-[#e9ffef] font-semibold hover:text-[#79ded1] text-lg 
                   
                   py-2 px-4 rounded-3xl focus:outline-none focus:shadow-outline border border-[#e9ffef] hover:border-[#79ded1]"
                   type="button" onClick={()=>setIsAuthenticated(true) && setUser(user +[{username:document.getElementById('username').value,email:document.getElementById('email').value}])}
                 >
                   Register
-                </button>
+                </button></Link>
               </div>
             </form>}
 
